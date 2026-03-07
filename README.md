@@ -66,7 +66,7 @@ A total of **26 features** were engineered to capture temporal dependencies and 
 
 
 
-## � Performance Results
+## 📈 Performance Results
 
 ### 1. Comprehensive Model Comparison
 The following table provides a granular breakdown of performance across all evaluated architectures. Note the significant impact of **Feature Engineering** on model convergence and generalization.
