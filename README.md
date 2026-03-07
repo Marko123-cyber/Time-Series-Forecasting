@@ -102,7 +102,7 @@ To evaluate **domain transfer**, the best-performing model (Optimized XGBoost) w
 | WH4 | -7.8924 | 8.5258 | 7.9963 |
 
 
-## Model Performance on Unseen Soil Types (WH1–WH8)
+## 🌐 Model Performance on Unseen Soil Types (WH1–WH8)
 
 | WH1 | WH2 |
 |-----|-----|
