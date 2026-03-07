@@ -1,6 +1,6 @@
 # Soil Moisture Prediction: XGBoost vs Deep Learning Approaches
 
-This project presents a comprehensive analysis and comparison of various machine learning approaches for predicting soil moisture (SM) using meteorological parameters. It evaluates optimized tree-based models against several neural network architectures, emphasizing the importance of feature engineering in time-series forecasting.
+This project presents a comprehensive analysis and comparison of various machine learning approaches for predicting soil moisture (SM) using meteorological parameters in the context of **agricultural and environmental monitoring**. It evaluates optimized tree-based models against several neural network architectures, emphasizing the importance of feature engineering in time-series forecasting.
 
 
 ## 🎯 Objectives
@@ -44,8 +44,6 @@ A total of **26 features** were engineered to capture temporal dependencies and 
 - **Simple LSTM:** Baseline architecture used to demonstrate the impact of feature complexity.
 
 
-
-
 <h3 align="center">Model Results</h3>
 
 <table align="center">
@@ -61,9 +59,6 @@ A total of **26 features** were engineered to capture temporal dependencies and 
 </td>
 </tr>
 </table>
-
-
-
 
 
 ## 📈 Performance Results
@@ -89,6 +84,9 @@ The following table provides a granular breakdown of performance across all eval
 
 ### 2. Extrapolated Generalization (WH1-WH8 Sites)
 To evaluate **domain transfer**, the best-performing model (Optimized XGBoost) was tested on 8 independent monitoring sites. This analysis reveals how soil-type specificity dictates model accuracy.
+
+> [!NOTE]
+> R² values here reflect **distributional shift** from the training soil type, not shape-prediction failure — see the visual analysis below for the full picture.
 
 | Monitoring Site | R² Score | RMSE | MAE |
 | :--- | :---: | :---: | :---: |
@@ -123,7 +121,6 @@ To evaluate **domain transfer**, the best-performing model (Optimized XGBoost) w
 Although the model was trained on a different soil type, the negative R² values on these unseen test datasets (WH1–WH8) are expected — the model has internalized the mean and variance of its training distribution, causing a systematic bias offset on new soils; however, in several cases (most notably WH3, which achieves R²=0.62, and WH4, which despite having the worst numeric score shows the predicted curve almost perfectly mirroring the temporal shape of the actual signal) the model demonstrates strong generalization to unseen environments, confirming that a simple post-hoc mean/variance correction would be sufficient to align the predictions and that the model has successfully learned the underlying temporal features rather than overfitting to a single soil's statistics.
 
 
-
 ## 🌍 Key Scientific Interpretation
 1. **Soil Type Specificity**: The contrast between WH3 (R²=0.62) and WH4 (R²=-7.89) proves that soil moisture is not just a climate function but a **soil-physics** function.
 2. **Trend vs. Magnitude**: Models maintain "Relative Accuracy" (capturing peaks/troughs) but fail in "Absolute Accuracy" when transferred to sites with different soil baselines.
@@ -131,4 +128,3 @@ Although the model was trained on a different soil type, the negative R² values
 
 ## 💡 Conclusion
 The results indicate that for this tabular time-series dataset, the **Optimized XGBoost model (R²: 0.80)** consistently outperforms deep learning architectures. The significant gap between the **Simple LSTM (Raw features)** and the **LSTM + Attention (Engineered features)** highlights that **careful feature engineering is more critical than architecture depth** for moderate-sized environmental datasets.
-
