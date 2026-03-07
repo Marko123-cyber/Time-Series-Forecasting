@@ -12,8 +12,15 @@ This project presents a comprehensive analysis and comparison of various machine
 
 
 
+<h3 align="center">Model Diagnostics</h3>
+<p align="center">
+  <img src="images/xgb_detailed_plot.png" width="900"/>
+</p>
 
-![Xgboost model](images/xgb_detailed_plot.png)
+<h3 align="center">Training / Validation / Test Predictions</h3>
+<p align="center">
+  <img src="images/xgb_train_val_test.png" width="900"/>
+</p>
 
 
 
