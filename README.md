@@ -132,5 +132,3 @@ Although the model was trained on a different soil type, the negative R² values
 ## 💡 Conclusion
 The results indicate that for this tabular time-series dataset, the **Optimized XGBoost model (R²: 0.80)** consistently outperforms deep learning architectures. The significant gap between the **Simple LSTM (Raw features)** and the **LSTM + Attention (Engineered features)** highlights that **careful feature engineering is more critical than architecture depth** for moderate-sized environmental datasets.
 
----
-*Project Workspace: `/home/marko/Desktop/TimeSeries`*
