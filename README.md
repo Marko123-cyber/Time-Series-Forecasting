@@ -2,11 +2,25 @@
 
 This project presents a comprehensive analysis and comparison of various machine learning approaches for predicting soil moisture (SM) using meteorological parameters. It evaluates optimized tree-based models against several neural network architectures, emphasizing the importance of feature engineering in time-series forecasting.
 
+
 ## 🎯 Objectives
 - **Feature Engineering:** Derive complex temporal and environmental features from raw meteorological data.
 - **Model Comparison:** Compare the performance of XGBoost against LSTM (with and without Attention), GRU, and CNN architectures.
 - **Optimization:** Utilize Optuna for hyperparameter tuning of the champion model.
 - **Evaluation:** Assess models using R², RMSE, and MAE across training, validation, and test datasets.
+
+
+
+
+
+![Xgboost model](images/xgb_detailed_plot.png)
+
+
+
+
+
+
+
 
 ## 📊 Dataset Description
 > [!IMPORTANT]
