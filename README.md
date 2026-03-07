@@ -46,16 +46,21 @@ A total of **26 features** were engineered to capture temporal dependencies and 
 
 
 
-<h3 align="center">Model Diagnostics</h3>
-<p align="center">
-  <img src="images/xgb_detailed_plot.png" width="900"/>
-</p>
+<h3 align="center">Model Results</h3>
 
-<h3 align="center">Training / Validation / Test Predictions</h3>
-<p align="center">
-  <img src="images/xgb_train_val_test.png" width="900"/>
-</p>
+<table align="center">
+<tr>
+<td align="center">
+<b>Model Diagnostics</b><br>
+<img src="images/xgb_detailed_plot.png" width="500">
+</td>
 
+<td align="center">
+<b>Training / Validation / Test Predictions</b><br>
+<img src="images/xgb_train_val_test.png" width="500">
+</td>
+</tr>
+</table>
 
 
 
