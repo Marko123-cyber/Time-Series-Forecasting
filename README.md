@@ -90,16 +90,16 @@ The following table provides a granular breakdown of performance across all eval
 ### 2. Extrapolated Generalization (WH1-WH8 Sites)
 To evaluate **domain transfer**, the best-performing model (Optimized XGBoost) was tested on 8 independent monitoring sites. This analysis reveals how soil-type specificity dictates model accuracy.
 
-| Monitoring Site | R² Score | RMSE | MAE | Performance Level |
-| :--- | :---: | :---: | :---: | :--- |
-| **WH3** | **0.6214** | **2.1679** | **1.7958** | 🏆 **Excellent** |
-| WH5 | 0.2232 | 2.7559 | 2.1724 | 🟡 Moderate |
-| WH6 | 0.1915 | 6.4686 | 5.0774 | 🟡 Moderate |
-| WH7 | -0.0946 | 6.0664 | 5.3575 | 🔴 Poor |
-| WH1 | -0.4084 | 5.9698 | 4.7698 | 🔴 Poor |
-| WH2 | -1.3820 | 5.6214 | 5.0401 | 🔴 Poor |
-| WH8 | -1.4807 | 5.0291 | 4.4435 | 🔴 Poor |
-| WH4 | -7.8924 | 8.5258 | 7.9963 | 🔴 Extreme Failure |
+| Monitoring Site | R² Score | RMSE | MAE |
+| :--- | :---: | :---: | :---: |
+| **WH3** | **0.6214** | **2.1679** | **1.7958** |
+| WH5 | 0.2232 | 2.7559 | 2.1724 |
+| WH6 | 0.1915 | 6.4686 | 5.0774 |
+| WH7 | -0.0946 | 6.0664 | 5.3575 |
+| WH1 | -0.4084 | 5.9698 | 4.7698 |
+| WH2 | -1.3820 | 5.6214 | 5.0401 |
+| WH8 | -1.4807 | 5.0291 | 4.4435 |
+| WH4 | -7.8924 | 8.5258 | 7.9963 |
 
 
 ## Model Performance on Unseen Soil Types (WH1–WH8)
