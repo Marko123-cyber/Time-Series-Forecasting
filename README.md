@@ -11,24 +11,6 @@ This project presents a comprehensive analysis and comparison of various machine
 
 
 
-
-<h3 align="center">Model Diagnostics</h3>
-<p align="center">
-  <img src="images/xgb_detailed_plot.png" width="900"/>
-</p>
-
-<h3 align="center">Training / Validation / Test Predictions</h3>
-<p align="center">
-  <img src="images/xgb_train_val_test.png" width="900"/>
-</p>
-
-
-
-
-
-
-
-
 ## 📊 Dataset Description
 > [!IMPORTANT]
 > The original `data.xlsx` dataset is copyrighted and cannot be shared publicly.
@@ -60,6 +42,24 @@ A total of **26 features** were engineered to capture temporal dependencies and 
 - **CNN:** A convolutional approach to extract spatial patterns from sequences.
 - **GRU:** An efficient recurrent variant.
 - **Simple LSTM:** Baseline architecture used to demonstrate the impact of feature complexity.
+
+
+
+
+<h3 align="center">Model Diagnostics</h3>
+<p align="center">
+  <img src="images/xgb_detailed_plot.png" width="900"/>
+</p>
+
+<h3 align="center">Training / Validation / Test Predictions</h3>
+<p align="center">
+  <img src="images/xgb_train_val_test.png" width="900"/>
+</p>
+
+
+
+
+
 
 ## � Performance Results
 
